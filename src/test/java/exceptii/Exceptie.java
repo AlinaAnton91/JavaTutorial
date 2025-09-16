@@ -12,8 +12,8 @@ public class Exceptie {
     public void testMethod () throws FileNotFoundException {
         //printFileContent();
         //printArrayNumbers();
-        //checkStudentAge();
-        printFileContentV2();
+        checkStudentAge();
+        //printFileContentV2();
     }
 
     //Incercam sa citim continutul dintr-un fisier
@@ -47,11 +47,11 @@ public class Exceptie {
     }
 
     public void checkStudentAge() {
-        int varsta = 20;
+        int varsta = 16;
         if (varsta < 18) {
-            throw new RuntimeException("Nu servim tigari minorilor");
+            throw new RuntimeException("Nu servim tigari minorilor!");
         } else {
-            System.out.println("Servim tigari doar la majori");
+            System.out.println("Esti major, iti putem servi tigari!");
         }
     }
 

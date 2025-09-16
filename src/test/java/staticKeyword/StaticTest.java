@@ -10,6 +10,7 @@ public class StaticTest {
         Elev Alex = new Elev("Dorha", "Alex", "10B");
 
         Alina.infoElev();
+        System.out.println();
         Alex.infoElev();
     }
 }
